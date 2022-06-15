@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/personalDetailLayout"
+        style="@style/regLLAll">
+
+        <LinearLayout style="@style/titleLayoutNew">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/titleNewFranchise"
+                android:text="@string/f_personalDetail" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/regDropdown" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/fullname"
+            style="@style/inputBox"
+            android:hint="@string/ct_writefullname" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtfathername"
+            style="@style/inputBox"
+            android:hint="@string/ct_writefathername" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtmothersmaidensname"
+            style="@style/inputBox"
+            android:hint="@string/ct_writemothername" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/edtdob"
+            style="@style/inputBox"
+            android:text="Date of Birth" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtContactNumber"
+            style="@style/inputBox"
+            android:hint="@string/ct_contactnumber"
+            android:inputType="number" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtplaceofbirth"
+            style="@style/inputBox"
+            android:hint="@string/ct_writeplaceofbirth" />
+
+        <LinearLayout
+            style="@style/subTitleWithLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/subTitle"
+                android:text="@string/ct_sex" />
+
+            <RadioGroup
+                android:id="@+id/rgGender"
+                style="@style/radioGroup">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radiomale"
+                    style="@style/radioBtn"
+                    android:checked="true"
+                    android:text="@string/ct_male" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radiofemale"
+                    style="@style/radioBtn"
+                    android:text="@string/ct_female" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtmothertongue"
+            style="@style/inputBox"
+            android:hint="@string/ct_writemothertongue" />
+
+        <LinearLayout
+            style="@style/subTitleWithLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/subTitle"
+                android:text="@string/ct_maritalstatus" />
+
+            <RadioGroup
+                android:id="@+id/rgMaritialStatus"
+                style="@style/radioGroup">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radiosingle"
+                    style="@style/radioBtn"
+                    android:checked="true"
+                    android:text="@string/ct_single" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radiomarried"
+                    style="@style/radioBtn"
+                    android:text="@string/ct_married" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radioseparated"
+                    style="@style/radioBtn"
+                    android:text="@string/ct_separated" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radiowidowed"
+                    style="@style/radioBtn"
+                    android:text="@string/ct_widowed" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtwhatsappnumber"
+            style="@style/inputBox"
+            android:hint="@string/ct_writewhatsupnumber"
+            android:inputType="number" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtaltnumber"
+            style="@style/inputBox"
+            android:hint="@string/ct_writealtnumber"
+            android:inputType="number" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtemailid"
+            style="@style/inputBox"
+            android:hint="@string/ct_writeemail"
+            android:inputType="textEmailAddress" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/permAddress"
+            style="@style/inputBox"
+            android:hint="@string/ct_writepermenentadrs"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:maxLines="4"
+            android:gravity="left|top"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/subTitle"
+            android:layout_marginTop="12dp"
+            android:text="Permanent Residence Address :-" />
+
+        <LinearLayout
+            style="@style/subTitleWithLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/subTitle"
+                android:text="@string/ct_accommodationtype" />
+
+            <RadioGroup
+                android:id="@+id/rgPermAccommodation"
+                style="@style/radioGroup">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radioPermOwn"
+                    style="@style/radioBtn"
+                    android:checked="true"
+                    android:text="Own" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radioPermRent"
+                    style="@style/radioBtn"
+                    android:text="Rent" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radioPermHostel"
+                    style="@style/radioBtn"
+                    android:text="Hotel" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radioPermBachelor"
+                    style="@style/radioBtn"
+                    android:text="Bachelor" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/permAccommodationSince"
+            style="@style/inputBox"
+            android:hint="@string/ct_writeaccommodationsince"
+            android:inputType="number"
+            android:maxLength="4" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/permEmergencyContact"
+            style="@style/inputBox"
+            android:hint="@string/ct_writeemergencycontact"
+            android:inputType="number" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/permProofSubmitted"
+            style="@style/inputBox"
+            android:hint="@string/ct_writeproofsub"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/permDocumentNumber"
+            style="@style/inputBox"
+            android:hint="@string/ct_writedcnumber"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/subTitle"
+            android:layout_marginTop="12dp"
+            android:text="Present Residence Address :-" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/presAddress"
+            style="@style/inputBox"
+            android:hint="@string/ct_writepermenentadrs"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:maxLines="4"
+            android:gravity="left|top"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical" />
+
+        <LinearLayout
+            style="@style/subTitleWithLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/subTitle"
+                android:text="@string/ct_accommodationtype" />
+
+            <RadioGroup
+                android:id="@+id/rgPresAccommodation"
+                style="@style/radioGroup">
+
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radioPresOwn"
+                    style="@style/radioBtn"
+                    android:checked="true"
+                    android:text="Own" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radioPresRent"
+                    style="@style/radioBtn"
+                    android:text="Rent" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radioPresHostel"
+                    style="@style/radioBtn"
+                    android:text="Hotel" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radioPresBachelor"
+                    style="@style/radioBtn"
+                    android:text="Bachelor" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/presAccommodationSince"
+            style="@style/inputBox"
+            android:hint="@string/ct_writeaccommodationsince"
+            android:inputType="number"
+            android:maxLength="4" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/presEmergencyContact"
+            style="@style/inputBox"
+            android:hint="@string/ct_writeemergencycontact"
+            android:inputType="number" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/presProofSubmitted"
+            style="@style/inputBox"
+            android:hint="@string/ct_writeproofsub"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/presDocumentNumber"
+            style="@style/inputBox"
+            android:hint="@string/ct_writedcnumber"
+            android:inputType="text" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stepSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_8dp"
+            android:background="@drawable/bg_submit"
+            android:gravity="center"
+            android:text="@string/f_submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_font" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

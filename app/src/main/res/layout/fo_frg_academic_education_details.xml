@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/fiveLayout"
+        style="@style/regLLAll">
+
+        <LinearLayout style="@style/titleLayoutNew">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/titleNewFranchise"
+                android:text="@string/f_academic" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/regDropdown" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/qualification"
+            style="@style/inputBox"
+            android:hint="@string/ct_qualification" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/instituteName"
+            style="@style/inputBox"
+            android:hint="@string/ct_institute" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/boardOrUniversity"
+            style="@style/inputBox"
+            android:hint="@string/ct_board" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/yearOfPassing"
+            style="@style/inputBox"
+            android:hint="@string/ct_passing"
+            android:inputType="number"
+            android:maxLength="4" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/percent"
+            style="@style/inputBox"
+            android:hint="@string/ct_percentage"
+            android:inputType="number"
+            android:maxLength="2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stepSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_8dp"
+            android:background="@drawable/bg_submit"
+            android:gravity="center"
+            android:text="@string/f_submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_font" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

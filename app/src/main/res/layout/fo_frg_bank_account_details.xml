@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/sevenLayout"
+        style="@style/regLLAll">
+
+        <LinearLayout style="@style/titleLayoutNew">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/titleNewFranchise"
+                android:text="@string/f_bankAccount" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/regDropdown" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/bankName"
+            style="@style/inputBox"
+            android:hint="@string/ct_writebankname"
+            android:inputType="number" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtbankname"
+            style="@style/inputBox"
+            android:hint="@string/ct_bankactname" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtaccountnumber"
+            style="@style/inputBox"
+            android:hint="@string/ct_writeacctnumb"
+            android:inputType="number" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtbranch"
+            style="@style/inputBox"
+            android:hint="@string/ct_writebranch" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtifsccode"
+            style="@style/inputBox"
+            android:hint="@string/ct_writeifsccode" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/subTitle"
+            android:text="Account Type" />
+
+        <LinearLayout style="@style/spinnerLayout">
+
+            <com.bbi.bizbulls.utils.CustomSpinner
+                android:id="@+id/spnrAccountType"
+                style="@style/customSpinner" />
+
+            <ImageView style="@style/customSpinnerDropDown" />
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stepSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_8dp"
+            android:background="@drawable/bg_submit"
+            android:gravity="center"
+            android:text="@string/f_submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_font" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

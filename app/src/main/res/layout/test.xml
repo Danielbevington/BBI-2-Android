@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/tenLayout"
+        style="@style/regLLAll">
+
+        <LinearLayout style="@style/titleLayoutNew">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/titleNewFranchise"
+                android:text="@string/f_auth" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/regDropdown" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/checkAndTextLayout"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/checkWithTextLayout"
+                android:layout_width="wrap_content"
+                android:text="i)" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/checkWithTextLayout"
+                android:text="@string/ct_authinfoone" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/checkAndTextLayout"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/checkWithTextLayout"
+                android:layout_width="wrap_content"
+                android:text="ii)" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/checkWithTextLayout"
+                android:text="@string/ct_authinfotwo" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/checkAndTextLayout"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/checkWithTextLayout"
+                android:layout_width="wrap_content"
+                android:text="iii)" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/checkWithTextLayout"
+                android:text="@string/ct_authinfothree" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/checkAndTextLayout"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checkAuthorization"
+                style="@style/checkBox" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/checkWithTextLayout"
+                android:text="@string/ct_authinfo" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/regBtnLayout">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btnAuthorizationPrev"
+                style="@style/regBtns"
+                android:text="@string/f_prev" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btnAuthorizationDetails"
+                style="@style/regBtns"
+                android:text="@string/f_submit" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btnAuthorizationNext"
+                style="@style/regBtns"
+                android:text="@string/f_next"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

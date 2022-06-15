@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--used dimen in our project-->
+
+    <dimen name="spacing">10dp</dimen>
+    <dimen name="heading">12dp</dimen>
+    <dimen name="main_heading">11dp</dimen>
+    <dimen name="sub_heading">10dp</dimen>
+    <dimen name="extrasmall_font">10sp</dimen>
+    <dimen name="small_font">12sp</dimen>
+    <dimen name="medium_font">14sp</dimen>
+    <dimen name="large_font">16sp</dimen>
+    <dimen name="exlarge_font">18sp</dimen>
+
+    <dimen name="toolBarHeight">48dp</dimen>
+    <dimen name="slidersize">120dp</dimen>
+    <dimen name="cardsize">42dp</dimen>
+    <dimen name="smallbutton">16dp</dimen>
+    <dimen name="foregisterbtnheight">26dp</dimen>
+    <dimen name="textboxpadding">8dp</dimen>
+    <dimen name="btnpadding">26dp</dimen>
+    <dimen name="dialogbtn">40dp</dimen>
+
+    <dimen name="widthbox">60dp</dimen>
+    <dimen name="heightbox">72dp</dimen>
+    <dimen name="imagebox">36dp</dimen>
+    <dimen name="imagefullbox">48dp</dimen>
+
+    <dimen name="marginmax">15dp</dimen>
+    <dimen name="marginmin">10dp</dimen>
+    <dimen name="minimumspacing">2dp</dimen>
+    <dimen name="overrallspacing">6dp</dimen>
+
+
+    <dimen name="_5dp">5dp</dimen>
+    <dimen name="_8dp">8dp</dimen>
+    <dimen name="_10dp">10dp</dimen>
+    <dimen name="_12dp">12dp</dimen>
+    <dimen name="_16dp">16dp</dimen>
+    <dimen name="_20dp">20dp</dimen>
+    <dimen name="_40dp">40dp</dimen>
+    <dimen name="_80dp">80dp</dimen>
+    <dimen name="_150dp">150dp</dimen>
+
+    <item name="imageLoaderCircleRadius" format="float" type="dimen">30.0</item>
+    <item name="imageLoaderCircleStroke" format="float" type="dimen">5.0</item>
+
+
+
+</resources>

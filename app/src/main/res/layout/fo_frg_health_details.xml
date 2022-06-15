@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/healthDetailsLayout"
+        style="@style/regLLAll">
+
+        <LinearLayout style="@style/titleLayoutNew">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/titleNewFranchise"
+                android:text="@string/f_healthDetail" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/regDropdown" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtbirthmarkesone"
+            style="@style/inputBox"
+            android:hint="@string/ct_birthidentificationmarks"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:maxLines="2"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtbirthmarketwo"
+            style="@style/inputBox"
+            android:hint="@string/ct_birthidentificationmarks"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:maxLines="2"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/subTitle"
+            android:text="Hand Use" />
+
+        <RelativeLayout style="@style/spinnerLayout">
+
+            <com.bbi.bizbulls.utils.CustomSpinner
+                android:id="@+id/spnrhanduse"
+                style="@style/customSpinner" />
+
+            <ImageView style="@style/customSpinnerDropDown" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtheight"
+            style="@style/inputBox"
+            android:hint="@string/ct_heightin"
+            android:inputType="number" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtweight"
+            style="@style/inputBox"
+            android:hint="@string/ct_weightin"
+            android:inputType="number" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/subTitle"
+            android:text="Blood Group" />
+
+        <RelativeLayout style="@style/spinnerLayout">
+
+            <com.bbi.bizbulls.utils.CustomSpinner
+                android:id="@+id/spnrbloodgroup"
+                style="@style/customSpinner" />
+
+            <ImageView style="@style/customSpinnerDropDown" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtwillingdonate"
+            style="@style/inputBox"
+            android:hint="@string/ct_ifwillingtodonate"
+            android:inputType="number" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/subTitle"
+            android:text="Physically Handicapped" />
+
+        <RelativeLayout style="@style/spinnerLayout">
+
+            <com.bbi.bizbulls.utils.CustomSpinner
+                android:id="@+id/spnrhandicapped"
+                style="@style/customSpinner" />
+
+            <ImageView style="@style/customSpinnerDropDown" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edttypeofph"
+            style="@style/inputBox"
+            android:hint="@string/ct_ifyeshandicappy" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/subTitle"
+            android:text="Surgeries/Treatments Undergone" />
+
+        <RelativeLayout style="@style/spinnerLayout">
+
+            <com.bbi.bizbulls.utils.CustomSpinner
+                android:id="@+id/spnrsurgeries"
+                style="@style/customSpinner" />
+
+            <ImageView style="@style/customSpinnerDropDown" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edttypeofsurgery"
+            style="@style/inputBox"
+            android:hint="@string/ct_ifyessurgeries" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/subTitle"
+            android:text="Any other Health Issues" />
+
+        <RelativeLayout style="@style/spinnerLayout">
+
+            <com.bbi.bizbulls.utils.CustomSpinner
+                android:id="@+id/spnrhealthissued"
+                style="@style/customSpinner" />
+
+            <ImageView style="@style/customSpinnerDropDown" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edttypeofhealthissue"
+            style="@style/inputBox"
+            android:hint="@string/ct_ifyeshelathissues" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/subTitle"
+            android:text="Any unhealthy Habits" />
+
+        <RelativeLayout style="@style/spinnerLayout">
+
+            <com.bbi.bizbulls.utils.CustomSpinner
+                android:id="@+id/spnrhabbit"
+                style="@style/customSpinner" />
+
+            <ImageView style="@style/customSpinnerDropDown" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edttypeofhabbits"
+            style="@style/inputBox"
+            android:hint="@string/ct_ifyesunhealthyhabits"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stepSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_8dp"
+            android:background="@drawable/bg_submit"
+            android:gravity="center"
+            android:text="@string/f_submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_font" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

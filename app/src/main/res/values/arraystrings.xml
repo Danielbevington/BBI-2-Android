@@ -1,0 +1,53 @@
+<resources>
+
+    <string-array name="FoRegistrationStepsNames">
+        <item>@string/f_personalDetail</item>
+        <item>@string/f_healthDetail</item>
+        <item>@string/f_exInterest</item>
+        <item>@string/f_checklist</item>
+        <item>@string/f_academic</item>
+        <item>@string/f_socialIdentity</item>
+        <item>@string/f_bankAccount</item>
+        <item>@string/f_familyDetail</item>
+        <item>@string/f_childDetail</item>
+        <item>@string/f_personalReference</item>
+        <item>@string/f_attachmentEnClosed</item>
+        <item>@string/f_auth</item>
+    </string-array>
+
+    <integer-array name="FoRegistrationStepsIons">
+        <item>@drawable/delivery</item>
+        <item>@drawable/property_broker</item>
+        <item>@drawable/property_broker</item>
+        <item>@drawable/property_broker</item>
+        <item>@drawable/property_broker</item>
+        <item>@drawable/property_broker</item>
+        <item>@drawable/property_broker</item>
+        <item>@drawable/property_broker</item>
+        <item>@drawable/property_broker</item>
+        <item>@drawable/property_broker</item>
+        <item>@drawable/property_broker</item>
+        <item>@drawable/property_broker</item>
+    </integer-array>
+
+    <string-array name="YesNo">
+        <item>@string/no</item>
+        <item>@string/yes</item>
+    </string-array>
+
+    <string-array name="handUsed">
+        <item>@string/rightHand</item>
+        <item>@string/leftHand</item>
+    </string-array>
+
+    <string-array name="bloodGroup">
+        <item>@string/aPlus</item>
+        <item>@string/oPlus</item>
+        <item>@string/bPlus</item>
+        <item>@string/aMinus</item>
+        <item>@string/oMinus</item>
+        <item>@string/bMinus</item>
+        <item>@string/abMinus</item>
+    </string-array>
+
+</resources>

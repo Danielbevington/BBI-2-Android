@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/tenLayout"
+        style="@style/regLLAll">
+
+        <LinearLayout style="@style/titleLayoutNew">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/titleNewFranchise"
+                android:text="@string/f_personalReference" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/regDropdown" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/otherName"
+            style="@style/inputBox"
+            android:hint="Name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/subTitle"
+            android:text="Relation Type" />
+
+        <LinearLayout style="@style/spinnerLayout">
+
+            <com.bbi.bizbulls.utils.CustomSpinner
+                android:id="@+id/spnrOtherRelationType"
+                style="@style/customSpinner" />
+
+            <ImageView style="@style/customSpinnerDropDown" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/subTitle"
+            android:text="Sex" />
+
+        <LinearLayout style="@style/spinnerLayout">
+
+            <com.bbi.bizbulls.utils.CustomSpinner
+                android:id="@+id/spnrOtherSex"
+                style="@style/customSpinner" />
+
+            <ImageView style="@style/customSpinnerDropDown" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/otherAge"
+            style="@style/inputBox"
+            android:hint="Age"
+            android:inputType="number" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/otherOccupation"
+            style="@style/inputBox"
+            android:hint="Occupation" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/otherLocation"
+            style="@style/inputBox"
+            android:hint="Location" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/otherContact"
+            style="@style/inputBox"
+            android:hint="Contact No." />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/otherAddress"
+            style="@style/inputBox"
+            android:hint="Address"
+            android:lines="4"
+            android:maxLines="4" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stepSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_8dp"
+            android:background="@drawable/bg_submit"
+            android:gravity="center"
+            android:text="@string/f_submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_font" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/fourLayout"
+        style="@style/regLLAll">
+
+        <LinearLayout style="@style/titleLayoutNew">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/titleNewFranchise"
+                android:text="@string/f_checklist" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/regDropdown" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/titleBox"
+            android:text="@string/ct_checkone" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/titleBox"
+            android:text="@string/ct_checktwo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/titleBox"
+            android:text="@string/ct_checkthree" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/titleBox"
+            android:text="@string/ct_checkfour" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/titleBox"
+            android:text="@string/ct_checkfive" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/titleBox"
+            android:text="@string/ct_checksix" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/titleBox"
+            android:text="@string/ct_checkseven" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/titleBox"
+            android:text="@string/ct_checkeight" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/titleBox"
+            android:text="@string/ct_checknine" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/titleBox"
+            android:text="@string/ct_checkten" />
+
+        <LinearLayout style="@style/checkAndTextLayout">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checklistForFranchise"
+                style="@style/checkBox" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/checkWithTextLayout"
+                android:text="@string/ct_checklistagree" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stepSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_8dp"
+            android:background="@drawable/bg_submit"
+            android:gravity="center"
+            android:text="@string/f_submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_font" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

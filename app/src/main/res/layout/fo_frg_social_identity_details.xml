@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/sixLayout"
+        style="@style/regLLAll">
+
+        <LinearLayout style="@style/titleLayoutNew">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/titleNewFranchise"
+                android:text="@string/f_socialIdentity" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/regDropdown" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/aadharCardNumber"
+            style="@style/inputBox"
+            android:hint="@string/ct_aadharcardnumber"
+            android:inputType="number" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/pancard"
+            style="@style/inputBox"
+            android:hint="@string/ct_pancardno"
+            android:inputType="text"
+            android:maxLength="10" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/voterId"
+            style="@style/inputBox"
+            android:hint="@string/ct_voterno" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/drivingLicence"
+            style="@style/inputBox"
+            android:hint="@string/ct_drivinglicense" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/passport"
+            style="@style/inputBox"
+            android:hint="@string/ct_passportno" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/rationCard"
+            style="@style/inputBox"
+            android:hint="@string/ct_rationno" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stepSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_8dp"
+            android:background="@drawable/bg_submit"
+            android:gravity="center"
+            android:text="@string/f_submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_font" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
