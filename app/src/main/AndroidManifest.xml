@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BizBullsIndia">
         <activity
-            android:name=".ui.registrationforfo.FoRegistrationDashBoardActivity"
+            android:name=".SplashScreenActivity"
             android:exported="true"
             android:noHistory="true">
             <intent-filter>
@@ -51,7 +51,7 @@
             android:exported="true"
             android:noHistory="true"/>
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".ui.registrationforfo.FoRegistrationDashBoardActivity"
             android:exported="true"
             android:noHistory="true"/>
         <activity
