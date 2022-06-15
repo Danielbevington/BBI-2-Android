@@ -10,7 +10,6 @@ import androidx.fragment.app.Fragment
 import com.bbi.bizbulls.R
 import com.bbi.bizbulls.databinding.FoActivityRegistrationBinding
 import com.bbi.bizbulls.ui.registrationforfo.fragments.*
-import com.bbi.bizbulls.utils.CommonUtils
 
 class FranchiseeRegistrationActivity : AppCompatActivity() {
     private lateinit var binding: FoActivityRegistrationBinding
